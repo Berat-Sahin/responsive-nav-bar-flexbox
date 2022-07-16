@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*{
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+:root{
+    --primary-color: #F1DCAC;
+    --primary-color-lt: #f5e9cc;
+    --secondary-color: rgb(157, 146, 255);
+}
+
+h1{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: var(--primary-color-lt);
+}
+
+body{
+    background-color: rgba(78,106,115,1)    ;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    height:max-content;
+    background: rgb(23,43,66);
+    background: linear-gradient(90deg, rgba(23,43,66,1) 0%, rgba(78,106,115,1) 100%);
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.logo{
+    flex: 1;
+}
+
+.nav-imp{
+    order: 1;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 20px;
+    
+}
+
+.nav-start{
+    flex-basis: 30%;
+}
+
+.nav>*{
+    cursor: pointer;
+    color: #F1DCAC; 
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 3px;
+    transition:0.5s;
+    background-image: linear-gradient(120deg, transparent 0% , transparent 50%, rgba(23,43,66,1)50%);
+    background-size: 300%;
+}
+
+
+.nav>*:hover ,.nav>*:focus{
+    background-size: 120%;
+    background-position: right;
+
+
+}
+
+
+.nav>*:active{
+    background-size: 300%;
+    background-position: right;
+    transition: 0.1s;
+
+}
+
+
+
+@media(max-width:800px){
+
+  
+
+    .nav>*{
+        cursor: pointer;
+        color: #F1DCAC; 
+        border: 1px solid;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 3px;
+        transition:0.5s;
+        background-image: linear-gradient(120deg, transparent 0% , transparent 50%, rgba(23,43,66,1)50%);
+        background-size: 300%;
+    }
+
+  
+
+    .nav-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        text-align: center;
+        gap: 10px;
+        position: absolute ;
+        padding-right: 0px;
+        height: 100vh;
+        width: 100vw;
+
+        right:100%;
+        margin-top: 10% ;
+
+        padding-inline-start: 0px;
+       
+      
+        
+    }
+
+    .nav-menu li{
+        color: var(--primary-color-lt);
+    }
+    
+   
+    .navbar{
+        height:20%;
+        background: rgb(23,43,66);
+        background: linear-gradient(90deg, rgba(23,43,66,1) 0%, rgba(78,106,115,1) 100%);
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+       
+        padding: 20px;
+        gap:10px
+  
+        
+    }
+
+    .nav-imp{
+        flex-basis: 40%;
+        text-align: center;
+        order: 0;
+        
+    }
+    .nav-imp>*{
+        padding: 20px;
+    }
+
+    .logo{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-start{
+        flex-basis: 100%;
+    }
+
+    .line{
+        gap: 0px;
+        width: 30px;
+        height: 5px;
+        background-color: var(--primary-color);
+        border-radius: 2px;
+        margin-bottom: 4px;
+        display: flex;
+        flex-direction: column;
+     
+
+    }
+
+    .menu{
+        border: 1px solid var(--primary-color);
+        padding: 14px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+}
